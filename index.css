@@ -48,7 +48,7 @@ font-family: var(--primary-ff);
 
 .container {
    
-   width: 85%;
+   width: 95%;
    margin: 0 auto;
 }
 
@@ -107,15 +107,22 @@ h1 {
     font-family: var(--secondary-ff);
     font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
     margin: 0;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
 }
 
 .register {
     background-color: #ff218c;
     margin-top: 1em;
-    padding: 0.5em 1em;
+    padding: 0.6em 1.1em;
     border: none;
-    border-radius: 10px;
 }
 
 .register:hover,
@@ -124,14 +131,16 @@ h1 {
 }
 
 .registration-link {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     text-decoration: none;
     color: var(--text-clr);
 }
 
 .text {
+
      font-size: 0.8rem;
+     text-align: center;
 }
 
 .subtext {
@@ -141,16 +150,33 @@ h1 {
 
 article {
     width: 100%;
-    margin-top: 4em;
+    margin: 0;
+    padding: 1em 1.5em;
+}
+
+.first-article {
+    background-color: #21b0fe;
+    color: var(--text-clr);
+
+}
+
+.second-article {
+    background-color: #fed700;
+}
+
+.third-article {
+    background-color: #fe218b;
+    color: var(--text-clr);
 }
 
 h2 {
     font-family: var(--secondary-ff);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
 }
 
 article p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    text-align: center;
 }
