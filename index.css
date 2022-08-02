@@ -27,17 +27,16 @@ img {
 
   /* font */
   --primary-ff: 'Roboto', sans-serif;
-  --secondary-ff: 'action_manbold';
+  --secondary-ff: 'Ubuntu', sans-serif;
 }
 
 body {
-    font-family: var(--primary-ff);
+font-family: var(--primary-ff);
   font-size: 10px;
   line-height: 1.6;
-  background-color: var(--bgclr);
-  color: var(--text-clr);
+  background-color: var(--text-clr);
+  color: var(--bgclr);
   margin: 0;
-  overflow: hidden;
 }
 
 .icon::before,
@@ -48,13 +47,14 @@ body {
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+   
+   width: 85%;
+   margin: 0 auto;
 }
 
 header {
     display: none;
-padding: 1em 0;
+padding: 1em 2em;
 }
 
 .top-container {
@@ -99,14 +99,14 @@ padding: 1em 0;
     color: #f75c03;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
+main {
+    width: 100%;
 }
 
 h1 {
     font-family: var(--secondary-ff);
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -128,4 +128,29 @@ h1 {
     font-weight: 400;
     text-decoration: none;
     color: var(--text-clr);
+}
+
+.text {
+     font-size: 0.8rem;
+}
+
+.subtext {
+    display: block;
+    margin: 0;
+}
+
+article {
+    width: 100%;
+    margin-top: 4em;
+}
+
+h2 {
+    font-family: var(--secondary-ff);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+article p {
+    font-size: 0.8rem;
 }
