@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'action_manbold';
+    src: url('./fonts/Action_Man_Extended_Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  /* color */
+  --bgclr: #1c1c1c;
+  --text-clr: #f5f5f6;
+  --desktop-bgclr: #e3e3e4;
+
+  /* font */
+  --primary-ff: 'Roboto', sans-serif;
+  --secondary-ff: 'action_manbold';
+}
+
+body {
+    font-family: var(--primary-ff);
+  font-size: 10px;
+  line-height: 1.6;
+  background-color: var(--bgclr);
+  color: var(--text-clr);
+  margin: 0;
+  overflow: hidden;
+}
+
+.icon::before,
+.icon::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: none;
+padding: 1em 0;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    max-width: 30px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.nav {
+    background-color: var(--text-clr);
+    color: var(--bgclr);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #f75c03;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: var(--secondary-ff);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.register {
+    background-color: #ff218c;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+}
+
+.register:hover,
+.register:focus {
+    background-color: #fe7f2d;
+}
+
+.registration-link {
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-clr);
+}
