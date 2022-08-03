@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'action_manbold';
-    src: url('./fonts/Action_Man_Extended_Bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
 
 *,
 *::before,
@@ -13,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 img {
@@ -21,21 +16,19 @@ img {
 
 :root {
   /* color */
-  --bgclr: #1c1c1c;
-  --text-clr: #f5f5f6;
-  --desktop-bgclr: #e3e3e4;
+  --bgclr:white;
+  --text-clr:#1D1759;
+--btn-clr: #9CFFF9;
 
   /* font */
-  --primary-ff: 'Roboto', sans-serif;
-  --secondary-ff: 'Ubuntu', sans-serif;
+  --ff: 'Poppins', sans-serif;
 }
 
 body {
-font-family: var(--primary-ff);
-  font-size: 10px;
+font-family: var(--ff);
   line-height: 1.6;
-  background-color: var(--text-clr);
-  color: var(--bgclr);
+  background-color: var(--bglr);
+  color: var(--text-clr);
   margin: 0;
 }
 
@@ -48,7 +41,7 @@ font-family: var(--primary-ff);
 
 .container {
    
-   width: 95%;
+   width: 90%;
    margin: 0 auto;
 }
 
@@ -73,7 +66,7 @@ padding: 1em 2em;
 
 .nav {
     background-color: var(--text-clr);
-    color: var(--bgclr);
+    color: var(--btn-clr);
 }
 
 .nav-list {
@@ -103,10 +96,16 @@ main {
     width: 100%;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
-    font-family: var(--secondary-ff);
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 5.2rem;
+    font-weight: 800;
     text-align: center;
     margin: 0;
 }
@@ -119,27 +118,30 @@ h1 {
 }
 
 .register {
-    background-color: #ff218c;
+    max-width: 390px;
+    background-color: var(--text-clr);
     margin-top: 1em;
-    padding: 0.6em 1.1em;
+    padding: 1.2em 12em;
     border: none;
+    border-radius: 60px;
 }
 
 .register:hover,
 .register:focus {
-    background-color: #fe7f2d;
+    background-color: #a31621;
 }
 
 .registration-link {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 400;
     text-decoration: none;
-    color: var(--text-clr);
+    color: var(--btn-clr);
 }
 
 .text {
 
-     font-size: 0.8rem;
+     font-size: 1.6rem;
+     font-weight: 400;
      text-align: center;
 }
 
@@ -150,33 +152,36 @@ h1 {
 
 article {
     width: 100%;
-    margin: 0;
-    padding: 1em 1.5em;
+    margin-bottom: 1.8em;
+  padding: 2em 1.5em;
+    background-color: var(--btn-clr);
+    border-radius: 20px;
 }
 
-.first-article {
-    background-color: #21b0fe;
-    color: var(--text-clr);
 
-}
-
-.second-article {
-    background-color: #fed700;
-}
-
-.third-article {
-    background-color: #fe218b;
-    color: var(--text-clr);
-}
 
 h2 {
-    font-family: var(--secondary-ff);
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
     text-align: center;
 }
 
 article p {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+    font-weight: 400;
     text-align: center;
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8em;
+    margin: 4em 0;
+}
+
+.fa-brands {
+    font-size: 2.2rem;
+    color: var(--text-clr);
 }
