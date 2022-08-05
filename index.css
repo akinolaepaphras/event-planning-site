@@ -136,6 +136,7 @@ header {
 
 .nav-link {
     text-decoration: none;
+    text-transform: capitalize;
     color: inherit;
     font-size: 1.7rem;
     cursor: pointer;
