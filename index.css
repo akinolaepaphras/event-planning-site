@@ -69,14 +69,33 @@ header {
     background-color: var(--btn-clr);
     color: var(--text-clr);
     top: 0;
-    bottom: 40em;
-    left: 40em;
+    bottom: 60em;
+    left: 20em;
     right: 0;
     z-index: 100;
     
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
+
+@media (min-width: 500px) {
+    .nav {
+      top: 0;
+      bottom: 60em;
+      left: 30em;
+      right: 0;
+    } 
+}
+
+@media (min-width: 700px) {
+  .nav {
+    top: 0;
+    bottom: 50em;
+    left: 45em;
+    right: 0;
+  } 
+}
+
 
 .desktop-nav {
     display: none;
@@ -96,7 +115,7 @@ header {
 .nav-link {
     text-decoration: none;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
@@ -179,13 +198,8 @@ main {
     align-items: center;
 }
 
-.grid {
-    max-width: 350px;
-     margin: .4  em;
-}
-
 h1 {
-    font-size: 5rem;
+    font-size: 3.7rem;
     font-weight: 800;
     text-align: center;
     margin: 0;
@@ -203,11 +217,10 @@ h1 {
 }
 
 .register {
-    width: 350px;
     background-color: var(--text-clr);
     margin-top: 1em;
-    padding: 1.2em 12em;
-    font-size: 1.3em;
+    padding: 1.2em 9em;
+    font-size: 1.3rem;
     font-weight: 400;
     text-decoration: none;
     color: var(--btn-clr);
@@ -282,23 +295,6 @@ article p {
     border: 1px red solid;
 }
 
-@media (min-width: 375px) {
-    .nav {
-      top: 0;
-      bottom: 60em;
-      left: 20em;
-      right: 0;
-    } 
-}
-
-@media (min-width: 500px) {
-      .nav {
-        top: 0;
-        bottom: 60em;
-        left: 30em;
-        right: 0;
-      } 
-}
 
 @media (min-width: 900px) {
 .nav-toggle {
