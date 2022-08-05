@@ -301,12 +301,12 @@ article p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.8em;
+    gap: 2.3em;
     margin: 4em 0;
 }
 
 .fa-brands {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     color: var(--text-clr);
 }
 
