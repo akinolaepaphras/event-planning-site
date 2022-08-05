@@ -40,7 +40,6 @@ font-family: var(--ff);
 }
 
 .container {
-   
    width: 90%;
    margin: 0 auto;
 }
@@ -67,7 +66,6 @@ header {
 
 .nav {
     position: fixed;
-    
     background-color: var(--btn-clr);
     color: var(--text-clr);
     top: 0;
@@ -78,6 +76,10 @@ header {
     
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.desktop-nav {
+    display: none;
 }
 
 .nav-list {
@@ -177,6 +179,11 @@ main {
     align-items: center;
 }
 
+.grid {
+    max-width: 350px;
+     margin: .4  em;
+}
+
 h1 {
     font-size: 5rem;
     font-weight: 800;
@@ -196,7 +203,7 @@ h1 {
 }
 
 .register {
-    max-width: 390px;
+    width: 350px;
     background-color: var(--text-clr);
     margin-top: 1em;
     padding: 1.2em 12em;
@@ -271,22 +278,52 @@ article p {
     display: none;
 }
 
+.nav-list p {
+    border: 1px red solid;
+}
+
+@media (min-width: 375px) {
+    .nav {
+      top: 0;
+      bottom: 60em;
+      left: 20em;
+      right: 0;
+    } 
+}
+
+@media (min-width: 500px) {
+      .nav {
+        top: 0;
+        bottom: 60em;
+        left: 30em;
+        right: 0;
+      } 
+}
+
 @media (min-width: 900px) {
 .nav-toggle {
     display: none;
 }
 
-.nav-list {
+.desktop-nav {
+    display: block;
+}
+
+.desktop-nav__list {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5em;
+    list-style: none;
     padding: 0;
+
 }
 
-.nav-link {
-    text-transform: uppercase;
+.desktop-nav__link {
+    color: var(--btn-clr);
+    font-size: 1.5rem;
+    text-decoration: none;
+
 }
 
 section {
@@ -317,3 +354,4 @@ article {
     max-height : 100%;
 }
 }
+
