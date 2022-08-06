@@ -10,3 +10,9 @@ navLinks.forEach((link) => {
     document.body.classList.remove("nav-open")
   })
 })
+
+const btn = document.getElementsByClassName("btn")
+
+
+btn.addEventListener("click", function() {
+}) 
