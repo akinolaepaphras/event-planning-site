@@ -251,7 +251,7 @@ h1 {
 article {
  
   max-width: 400px;
-  transition: all 200ms ease;
+ 
 }
 
 h3 {
@@ -279,9 +279,8 @@ button {
 
 }
 
-button:hover,
-button:focus {
-   color: black;
+.active {
+     transition: all 500ms ease-in-out;
 }
 
 .btn .minus-btn {
@@ -334,6 +333,12 @@ button:focus {
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: capitalize;
+    transition: color 200ms ease;
+  }
+
+  .desktop-nav__link:hover,
+  .desktop-nav__link:focus {
+    color: yellow;
   }
 
   .container {
