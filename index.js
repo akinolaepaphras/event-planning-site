@@ -11,8 +11,11 @@ navLinks.forEach((link) => {
   })
 })
 
-const btn = document.getElementsByClassName("btn")
+const btns = document.querySelectorAll(".btn")
 
+btns.forEach(btn => {
+  btn.addEventListener("click", function() {
+    btn.parentNode.classList.toggle("active") 
+  })
+})
 
-btn.addEventListener("click", function() {
-}) 
