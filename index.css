@@ -339,9 +339,8 @@ article p {
   animation: pulse 1s;
 }
 
-.nav-list p {
-  border: 1px red solid;
-}
+
+
 
 @media (min-width: 900px) {
   .nav-toggle {
@@ -366,6 +365,11 @@ article p {
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: capitalize;
+  }
+
+  .desktop-nav__link:hover,
+  .desktop-nav__link:focus {
+    color: yellow;
   }
 
   section {
