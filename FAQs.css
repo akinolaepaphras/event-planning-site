@@ -237,10 +237,10 @@ h1 {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--btn-clr);
   margin-bottom: 2em;
   padding: 2.6em 2em;
@@ -249,9 +249,7 @@ h1 {
 }
 
 article {
- 
   max-width: 400px;
- 
 }
 
 h3 {
@@ -259,7 +257,7 @@ h3 {
   font-weight: 800;
 }
 
- p {
+p {
   display: none;
   margin-top: 1em;
   font-size: 1.3rem;
@@ -276,11 +274,10 @@ button {
   cursor: pointer;
   color: var(--text-clr);
   font-size: 4rem;
-
 }
 
 .active {
-     transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .btn .minus-btn {
@@ -288,12 +285,12 @@ button {
 }
 
 .wrapper.active .btn .minus-btn {
-  display: inline;             
+  display: inline;
 }
 
 .wrapper.active .btn .plus-btn {
-    display: none;             
-  }
+  display: none;
+}
 
 .icons-wrapper {
   display: flex;
@@ -307,6 +304,12 @@ button {
 .fa-brands {
   font-size: 2.4rem;
   color: var(--text-clr);
+  transition: transform 200ms ease-in-out;
+}
+
+.fa-brands:hover,
+.fa-brands:focus {
+  transform: scale(1.1);
 }
 
 @media (min-width: 900px) {

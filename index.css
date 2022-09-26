@@ -258,8 +258,8 @@ h1 {
 
 .register:hover,
 .register:focus {
-  background-color: green;
-  color: white;
+  background-color: var(--btn-clr);
+  color: var(--text-clr);
 }
 
 .text {
@@ -327,18 +327,23 @@ article p {
 .fa-brands {
   font-size: 2.4rem;
   color: var(--text-clr);
+  transition: transform 200ms ease-in-out;
+}
+
+.fa-brands:hover,
+.fa-brands:focus {
+  transform: scale(1.1);
 }
 
 .cover-pic__container {
-  max-width: 100%;
+  border-radius: 20px;
+  background-image: url('../images/download.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+  max-width: 900px;
+  height: 340px;
   margin: 0 auto;
 }
-
-.cover-pic {
-  width: 100%;
-  animation: pulse 1s;
-}
-
 
 
 
@@ -373,6 +378,7 @@ article p {
   }
 
   section {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -381,21 +387,25 @@ article p {
     margin-bottom: 5em;
   }
 
+  .grid {
+    height: 100%;
+  }
+
   h1 {
-    margin: 0;
+    margin-top: 0;
+    width: 100%;
   }
 
   .cover-pic__container {
     width: 100%;
-    margin: 0;
+    height: 100%;
     box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
       0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   }
 
-  .cover-pic {
-    display: block;
-    width: 100%;
-  }
+.button-wrapper {
+margin-bottom: 0;
+}
 
   .article-wrapper {
     display: flex;
